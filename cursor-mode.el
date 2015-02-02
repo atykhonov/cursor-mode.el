@@ -5,7 +5,7 @@
 (defface cursor-mode-cursor-face
   '((t (:inverse-video t)))
   "The face used for fake cursors."
-  :group 'cum)
+  :group 'cursor-mode)
 
 (defun cursor-mode-eval (expr &optional move-cursor)
   (cursor-mode--move-overlay expr t t))
@@ -114,4 +114,4 @@ highlights the entire width of the window."
          (setq cursor-mode-cursor
                (cursor-mode--make-cursor cursor-mode-current-map ,display))))))
 
-(provide 'cum)
+(provide 'cursor-mode)
