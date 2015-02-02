@@ -2,11 +2,11 @@
 
 
 (define-cursor-mode beginning-cursor-mode "A"
-  (define-key map "a" 'cursor-mode-ca-beginning-of-line)
-  (define-key map "b" 'cursor-mode-ca-beginning-of-buffer)
-  (define-key map "s" 'cursor-mode-ca-beginning-of-sexp)
-  (define-key map "d" 'cursor-mode-ca-beginning-of-defun)
-  (define-key map "l" 'cursor-mode-ca-beginning-of-line-text)
+  (cursor-mode-define-key map "a" 'cursor-mode-ca-beginning-of-line)
+  (cursor-mode-define-key map "b" 'cursor-mode-ca-beginning-of-buffer)
+  (cursor-mode-define-key map "s" 'cursor-mode-ca-beginning-of-sexp)
+  (cursor-mode-define-key map "d" 'cursor-mode-ca-beginning-of-defun)
+  (cursor-mode-define-key map "l" 'cursor-mode-ca-beginning-of-line-text)
   (define-key map "g" 'cursor-mode-disable-mode)
   ;; (define-key map (kbd "C-e") 'cursor-mode-detach-ce-cursor)
   )
