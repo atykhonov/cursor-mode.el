@@ -24,7 +24,7 @@
 
 (defun cursor-mode-mf-forward-word-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-word)))
+  (cursor-mode-eval-and-disable-mode '(forward-word)))
 
 (defun cursor-mode-mf-forward-sexp ()
   (interactive)
@@ -32,7 +32,7 @@
 
 (defun cursor-mode-mf-forward-sexp-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-sexp)))
+  (cursor-mode-eval-and-disable-mode '(forward-sexp)))
 
 (defun cursor-mode-mf-forward-symbol ()
   (interactive)
@@ -40,7 +40,7 @@
 
 (defun cursor-mode-mf-forward-symbol-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-symbol 1)))
+  (cursor-mode-eval-and-disable-mode '(forward-symbol 1)))
 
 (defun cursor-mode-mf-up-list ()
   (interactive)
@@ -48,7 +48,7 @@
 
 (defun cursor-mode-mf-up-list-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(up-list)))
+  (cursor-mode-eval-and-disable-mode '(up-list)))
 
 (defun cursor-mode-mf-down-list ()
   (interactive)
@@ -56,7 +56,7 @@
 
 (defun cursor-mode-mf-down-list-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(down-list)))
+  (cursor-mode-eval-and-disable-mode '(down-list)))
 
 (defun cursor-mode-mf-backward-list ()
   (interactive)
@@ -64,7 +64,7 @@
 
 (defun cursor-mode-mf-backward-list-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-list)))
+  (cursor-mode-eval-and-disable-mode '(forward-list)))
 
 (defun cursor-mode-mf-forward-page ()
   (interactive)
@@ -72,7 +72,7 @@
 
 (defun cursor-mode-mf-forward-page-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-page)))
+  (cursor-mode-eval-and-disable-mode '(forward-page)))
 
 (defun cursor-mode-mf-forward-sentence ()
   (interactive)
@@ -80,7 +80,7 @@
 
 (defun cursor-mode-mf-forward-sentence-disable-mode ()
   (interactive)
-  (cursor-mode-and-disable-mode '(forward-sentence)))
+  (cursor-mode-eval-and-disable-mode '(forward-sentence)))
 
 
 (global-set-key (kbd "M-f") 'forward-cursor-mode)
